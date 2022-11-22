@@ -62,6 +62,7 @@ class ArrayFunctions {
    */
   append(arr, item) {
     // hint: push, slice, splice would all work. Pay attention to the return value in the docs
+    arr.push(item);
     return arr;
   }
 
@@ -74,7 +75,7 @@ class ArrayFunctions {
    * concat([1,2,3], [4,5,6]); // [1,2,3,4,5,6]
    */
   concat(arr1, arr2) {
-    return;
+    return arr1.concat(arr2);
   }
 
   /**
@@ -86,6 +87,7 @@ class ArrayFunctions {
    */
   square(arr) {
     // hint: use .map
-    return;
+    const squarearr = arr.map(x => x * x);
+    return squarearr;
   }
 }
