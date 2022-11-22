@@ -41,7 +41,15 @@ class ArrayFunctions {
    * filter([1,2,3,5,6,2,4,2], 2); // [1,3,5,6,4]
    */
   filterOut(arr, item) {
-    return;
+    var filtered = arr.filter(
+      function (val) {
+        if (val == item) {
+          return false;
+        }
+        return true;
+      });
+
+    return filtered;
   }
 
   /**
