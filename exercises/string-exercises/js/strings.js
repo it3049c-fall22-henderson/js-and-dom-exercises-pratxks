@@ -31,6 +31,7 @@ class StringFunctions {
    * words('hello world') // ['hello', 'world']
    */
   split(input) {
-    return [input];
+    const inputarr = input.split(' ');
+    return inputarr;
   }
 }
